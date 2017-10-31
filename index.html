@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://webtechnelson.com/images/logo.png">
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+ </head>
+ 
+  <!-- BODY-->
+<body>
+  
+ <!-- NavBar -->
+  <nav class="navbar fixed-bottom navbar-toggleable-md navbar-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container">
+  <a class="navbar-brand" href="#"><img src="https://webtechnelson.com/images/logo.png" width="30px" height="30px" alt="logo"> Webtechnelson</a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active"><a class="nav-link homeLink" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item dropup">
+       <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building fa-lg" aria-hidden="true"></i> Helpful Links for this Pen</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Module_pattern" target="_blank"><i class="fa fa-wikipedia-w fa-lg" aria-hidden="true"></i> Module pattern</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Immediately-invoked_function_expression" target="_blank"><i class="fa fa fa-wikipedia-w fa-lg" aria-hidden="true"></i> Immediately-invoked functio expression</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link homeLink" href="https://codepen.io/techednelson/" target="_blank"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i> My Other Projects</a></li>
+      <li class="nav-item dropup">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-commenting fa-lg" aria-hidden="true"></i> Contact & Feedback</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://twitter.com/webtechnelson" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i> Twitter</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> info@webtechnelson.com</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav><!-- /NavBar -->
+
+<div id="calc" class="container">
+    <table class="table table-bordered border-0 d-flex justify-content-center">
+      <tbody class="text-center">
+        <tr class="blackMain blackMain d-flex justify-content-center">
+            <td id="calcTitle" colspan="4">CALCULATOR</td>
+        </tr>
+        <tr class="blackMain d-flex justify-content-end">
+            <td id="display" colspan="4">0</td>
+        </tr>
+        <tr class="blackMain d-flex justify-content-end">
+            <td id="displayMini" colspan="4"></td>
+        </tr>
+        <tr>
+          <td class="blackTop"><button type="button" id="c" class="btn btn-outline-danger">AC</button></td>
+          <td class="blackTop"><button type="button" id="plusOrMenus" class="btn btn-outline-danger">+/-</button></td>
+          <td class="blackTop"><button type="button" id="percentage" class="btn btn-outline-danger">%</button></td>
+          <td class="red"><button type="button" id="divide" class="btn btn-outline-warning">/</button></td>
+        </tr>
+        <tr>
+          <td class="blackBottom"><button type="button" id="seven" class="btn btn-outline-danger">7</button></td>
+          <td class="blackBottom"><button type="button" id="eigth" class="btn btn-outline-danger">8</button></td>
+          <td class="blackBottom"><button type="button" id="nine" class="btn btn-outline-danger">9</button></td>
+          <td class="red"><button type="button" id="multiply" class="btn btn-outline-warning">x</button></td>
+        </tr>
+        <tr>
+          <td class="blackBottom"><button type="button" id="four" class="btn btn-outline-danger">4</button></td>
+          <td class="blackBottom"><button type="button" id="five" class="btn btn-outline-danger">5</button></td>
+          <td class="blackBottom"><button type="button" id="six" class="btn btn-outline-danger">6</button></td>
+          <td class="red"><button type="button" id="menus" class="btn btn-outline-warning">-</button></td>
+        </tr>
+        <tr>
+          <td class="blackBottom"><button type="button" id="one" class="btn btn-outline-danger">1</button></td>
+          <td class="blackBottom"><button type="button" id="two" class="btn btn-outline-danger">2</button></td>
+          <td class="blackBottom"><button type="button" id="three" class="btn btn-outline-danger">3</button></td>
+          <td class="red"><button type="button" id="plus" class="btn btn-outline-warning">+</button></td>
+        </tr>
+        <tr>
+          <td class="blackBottom justify-content-start" colspan="2"><button type="button" id="zero" class="btn btn-outline-danger">0</button></td>
+          <td class="blackBottom"><button type="button" id="period" class="btn btn-outline-danger">.</button></td>
+          <td class="red"><button type="button" id="equal" class="btn btn-outline-warning">=</button></td>
+        </tr>
+      </tbody>
+    </table>   
+</div>    
+   
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/dfb01e1534.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
