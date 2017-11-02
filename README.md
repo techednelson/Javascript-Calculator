@@ -16,7 +16,7 @@ Final Project URL: https://codepen.io/techednelson/full/gxorJr/
 
 # Contribution
 
-Pull Requests to fix a bug or enhance this project are welcome. Please follow [these steps](/contributing.md) to contribute.
+Pull Requests to fix a bug or enhance this project are welcome. Please follow [these steps](CONTRIBUTING.md) to contribute.
 
 # License
 
