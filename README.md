@@ -1,4 +1,4 @@
-# FreeCodeCamp | Advanced Front End Development Projects
+# FreeCodeCamp-Challenge | Advanced Front End Development Project
 
 Build a JavaScript Calculator 
 
@@ -14,3 +14,10 @@ User Story: I can keep chaining mathematical operations together until I hit the
 
 Final Project URL: https://codepen.io/techednelson/full/gxorJr/
 
+# Contribution
+
+Pull Requests to fix a bug or enhance this project are welcome. Please follow [these steps](./contributing.md) to contribute.
+
+# License
+
+[Licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.](#https://creativecommons.org/licenses/by-sa/4.0/)
