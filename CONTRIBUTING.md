@@ -1,6 +1,6 @@
-#Contributor’s Guide
+# Contributor’s Guide
 
-##Issues
+## Issues
 
 Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.
 
@@ -13,7 +13,7 @@ Pull requests let you tell others about changes you've pushed to a repository on
 1. If you are new to Git and Github, it is advisable you go through this [link](https://github.com/collections/choosing-projects) before moving to the next step.
 
 2. Fork the project on Github, [Help Guide to Fork a repository.](https://help.github.com/articles/fork-a-repo/) 
-![Fork Image](https://postimg.org/image/6oea6kw9f/)
+![Fork Image](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
 
 3. Clone the project.
 
@@ -38,6 +38,7 @@ If you are making changes to the README.md file, you would need to have Markdown
 You can also add all unstaged files using:
 
 > git add .
+
 Note, using a *git add* . will automatically add all files. You can do a *git status* to see your changes, but do it before *git add*.
 
 7. Commit your changes using a descriptive commit message.
@@ -52,7 +53,7 @@ Note, using a *git add* . will automatically add all files. You can do a *git st
 
 	Within GitHub, visit this main repository and you should see a banner suggesting to 	make a pull request. While you're writing up the pull request, you can add *Closes #XXX*	in the message body where *#XXX* is the issue you're fixing. So an example would be 	*Closes #42* would close issue *#42*.
 
-##Submitting a Pull Request
+## Submitting a Pull Request
 
 What is a pull request? [Visit link](https://yangsu.github.io/pull-request-tutorial/)
 
@@ -62,7 +63,7 @@ In a situation where by somebody decides to fix an issue but doesn't follow up f
 
 Note: Every open-source project has a **CONTRIBUTING.md** file, please make sure to read theirs before you open up a pull request, otherwise your pull request may be rejected. However if you do not see any contributing.md file, you can send a pull request but do it in a descriptive manner.
 
-##Helpful Resources
+## Helpful Resources
 
 - Pro GIT Book
 
