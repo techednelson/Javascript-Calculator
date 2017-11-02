@@ -65,7 +65,7 @@ Note: Every open-source project has a **CONTRIBUTING.md** file, please make sure
 
 ## Helpful Resources
 
-- Pro GIT Book
+- [Pro GIT Book](https://git-scm.com/book/en/v2)
 
-- Try Git
+- [Try Git](https://try.github.io/levels/1/challenges/1)
 
