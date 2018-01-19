@@ -97,9 +97,7 @@ let mathController = (() => {
                 numberArr.push(numberInput);
                 acc = numberArr.join("");
             }
-            console.log(result);
-            console.log(acc);
-            console.log(per);
+          
             return {
                 result : result,
                 acc: acc,
@@ -224,7 +222,7 @@ let uiController = (() => {
 /*---------App Controller----------*/
 let controller = ((mathCtrl, uiCtrl) => {
     
-    let finalRes = 0, startOp = false, countOp = false, auxPer = 0, equalFlag = false, limit = false;
+    let finalRes = 0, startOp = false, countOp = false, auxPer = 0, equalFlag = false, limit = false, period = false;
      // 1. Get numbers from buttons
     let setupEventListeners = () => {
         document.addEventListener("click", event => {
@@ -240,6 +238,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -252,7 +251,8 @@ let controller = ((mathCtrl, uiCtrl) => {
                     break;
                     
                  case "period":
-                    if(startOp) {
+                    if(startOp && !period) {
+                        period = true;
                         ctrlAddInput(".");
                         ctrlAddToDisplay(".");
                         ctrlAddToDisplayMini(".");  
@@ -276,6 +276,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                 
@@ -296,6 +297,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -316,6 +318,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -336,6 +339,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                 
@@ -356,6 +360,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -376,6 +381,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -396,6 +402,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -416,6 +423,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -436,6 +444,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                 
@@ -456,6 +465,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         finalRes = 0;
                         equalFlag = false;
                         limit = false;
+                        period = false;
                     }
                     break;
                     
@@ -479,6 +489,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         ctrlAddToDisplay("+");
                         ctrlAddToDisplayMini("+");
                         countOp = false;
+                        period = false;
                     }
                     break;
                     
@@ -488,6 +499,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         ctrlAddToDisplay("-");
                         ctrlAddToDisplayMini("-"); 
                         countOp = false;
+                        period = false;
                     }
                     break;
                 
@@ -497,6 +509,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         ctrlAddToDisplay("/");
                         ctrlAddToDisplayMini("/"); 
                         countOp = false;
+                        period = false;
                     }
                     break;
                      
@@ -506,6 +519,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         ctrlAddToDisplay("x");
                         ctrlAddToDisplayMini("*");
                         countOp = false;
+                        period = false;
                     }
                     break;
                     
@@ -517,6 +531,7 @@ let controller = ((mathCtrl, uiCtrl) => {
                         countOp = true;
                         equalFlag = true;
                         auxPer = 0;
+                        /\.+/g.test(finalRes.result) ? period = true :                               period = false;
                     }
                     break;
             }
